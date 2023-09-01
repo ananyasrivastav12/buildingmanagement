@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="priority-queue.js"></script>
+  <script type="module" src="listofrooms.js"></script>
+</head>
+<body class="bg-beige-400 flex justify-center items-center h-screen">
+    <nav class="bg-black fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div>
+                    <a href="#" class="flex items-center text-white text-lg font-bold">
+                        <svg class="w-6 h-6 fill-current mr-2" viewBox="0 0 24 24">
+                            <path d="M20.586 11.757l-9.95 9.95a1.494 1.494 0 01-2.122 0l-3.72-3.72a1.494 1.494 0 010-2.122l9.95-9.95-4.714-4.714-9.95 9.95a3.482 3.482 0 000 4.95l3.72 3.72a3.482 3.482 0 004.95 0l9.95-9.95-4.714-4.714z"/>
+                        </svg>
+                        Building Management
+                    </a>
+                </div>
+                <div class="hidden sm:block">
+                    <ul class="flex space-x-4 text-white font-medium">
+                        <li><a href="#" id = "home_page" class="hover:text-gray-200">Home</a></li>
+                        <li><a href="#" id = "login_page" class="hover:text-gray-200">Login</a></li>
+    
+                    </ul>
+                </div>
+                <div class="sm:hidden">
+                    <button type="button" class="block text-gray-500 hover:text-white focus:text-white focus:outline-none">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path class="hidden" fill-rule="evenodd" clip-rule="evenodd" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm0 7a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2-2V13zm0 7a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2z"/>
+                            <path class="block" fill-rule="evenodd" clip-rule="evenodd" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm0 7a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  <div class="flex flex-col items-center justify-center">
+    <table class="w-full border-collapse border border-purple-700 rounded-lg shadow-lg overflow-hidden" id="myTable">
+      <thead class="bg-purple-700 text-white">
+        <tr>
+          <th class="py-3">Room No.</th>
+          <!-- <th class="py-3">Building</th> -->
+          <th class="py-3">Capacity</th>
+          <th class="py-3">Room open time</th>
+          <th class="py-3">Room close time</th>
+        </tr>
+      </thead>
+      <tbody id="body" class="bg-white divide-y divide-purple-700">
+      </tbody>
+    </table>
+  
+    <div class="flex mt-4">
+      <button id="create-update-btn" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-md mr-2 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Create/Update Room</button>
+      <button id="delete-btn" class="px-4 py-2 bg-red-500 text-white font-semibold rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50">Delete Room</button>
+    </div>
+  
+    <div class="flex flex-col md:flex-row justify-center items-center mt-4 space-y-4 md:space-y-0 md:space-x-4">
+      <input type="text" id="room-id" placeholder="Room No." class="border border-gray-400 rounded-md p-2">
+      <input type="number" id="room-capacity" placeholder="Capacity" class="border border-gray-400 rounded-md p-2">
+      <input type="time" id="open-time" placeholder="Room opens at" class="border border-gray-400 rounded-md p-2">
+      <input type="time" id="close-time" placeholder="Room closes at" class="border border-gray-400 rounded-md p-2">
+    </div>
+  </div>
+  
+</body>
+</html>

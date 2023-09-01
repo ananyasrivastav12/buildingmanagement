@@ -1,0 +1,53 @@
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="priority-queue.js"></script>
+  <script type="module" src="rooms.js"></script>
+</head>
+<body class="bg-gray-200 flex justify-center items-center h-screen bg-gray-200">
+  <nav class="bg-purple-700 fixed top-0 left-0 w-full z-50" style="height: 60px;">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div>
+                <a href="#" class="flex items-center text-white text-lg font-bold">
+                    <svg class="w-6 h-6 fill-current mr-2" viewBox="0 0 24 24">
+                        <path d="M20.586 11.757l-9.95 9.95a1.494 1.494 0 01-2.122 0l-3.72-3.72a1.494 1.494 0 010-2.122l9.95-9.95-4.714-4.714z"/>
+                    </svg>
+                    Building Management
+                </a>
+            </div>
+            <div class="hidden sm:block">
+                <ul class="flex space-x-4 text-white font-medium">
+                    <li><a href="./home.html" id="home_page" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="./book_delete.html" id="home_page" class="hover:text-gray-300">Dashboad</a></li>
+                    <li><a href="./home.html" id="login_page" class="hover:text-gray-300">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </nav>
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+    <h2 class="text-4xl font-bold text-purple-800 text-center mb-24">Availabilities</h2>
+
+    <table class="shadow-2xl font-[Poppins] border-2 border-white-500 w-6/12 mx-auto overflow-hidden" id="myTable">
+      <thead class="text-white">
+          <tr>
+              <th class="py-3 bg-purple-700">Room No.</th>
+              <th class="py-3 bg-purple-700">Available</th>
+              <th class="py-3 bg-purple-700">Available From</th>
+              <th class="py-3 bg-purple-700">Available To</th>
+              <th class="py-3 bg-purple-700">Book</th>
+          </tr>
+      </thead>
+      <tbody class="text-purple-800 text-center" id="body">
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

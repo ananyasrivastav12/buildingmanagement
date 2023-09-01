@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class = "bg-gray-200">
+  <nav class="bg-black fixed top-0 left-0 w-full z-10">
+    <div class="mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex">
+          <!-- <a href="#" class="flex-shrink-0 flex items-center">
+            <img class="h-8 w-auto" src="logo.svg" alt="Building Management">
+          </a> -->
+          <div class="hidden sm:ml-6 sm:flex">
+            <a href="#" class="px-3 py-4 text-white hover:text-gray-200"><button id = "home_page">Home</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <div class="flex justify-center items-center h-screen">
+      <div class="p-16 rounded-lg shadow-lg" style="background-color:rgb(105, 64, 245);">
+        <h1 class="text-4xl font-bold mb-8">Login</h1>
+        <form action="/login" method="post">
+          <div class="mb-6">
+            <label class="block text-gray-700 font-bold mb-2 text-xl" for="username">
+              Username
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg" id="username" name="username" type="text" placeholder="Username">
+          </div>
+          <div class="mb-8">
+            <label class="block text-gray-700 font-bold mb-2 text-xl" for="password">
+              Password
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg" id="password" type="password" name="password" placeholder="Password">
+          </div>
+          <div class="flex items-center justify-between">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline text-lg" type="submit" value="Log in" id="sign_in">
+              Sign In
+            </button>
+            <a class="inline-block align-baseline font-bold text-lg text-blue-500 pl-3 hover:text-blue-800" href="#" id="forgot">
+              Forgot Password?
+            </a>
+          </div>
+          <div class="flex items-center justify-between">
+            <a class="inline-block align-baseline font-bold text-lg text-blue-500 pl-3 hover:text-blue-800" href="register.html" id="register">
+              Register
+            </a>
+    
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="login.js"></script>
+  </body>
+</html>

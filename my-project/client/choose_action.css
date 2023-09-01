@@ -1,0 +1,87 @@
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ECEDEB;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #553EA3;
+}
+
+h1 {
+    font-size: 3em;
+    color: #553EA3;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.middle_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#welcome_text {
+    text-align: center;
+    color: #553EA3;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+#admin_button,
+#user_button {
+    background-color: #0F7784;
+    color: #ECEDEB;
+    border: none;
+    padding: 30px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 1em;
+    cursor: pointer;
+    border-radius: 0.5em;
+    transition: background-color 0.3s ease;
+}
+
+#admin_button:hover,
+#user_button:hover {
+    background-color: #055B66;
+}
+
+nav {
+    background-color: #553EA3;
+    color: #ECEDEB;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+nav a {
+    color: #ECEDEB;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #8B5CF6;
+}
+
+.content {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

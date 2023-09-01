@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="path/to/poppins-thin.woff2" rel="stylesheet">
+    <link href="path/to/montserrat.woff2" rel="stylesheet">
+</head>
+<body>
+    <div class="h-screen flex flex-col">
+        <nav class="bg-black fixed top-0 left-0 w-full z-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div>
+                        <a href="#" class="flex items-center text-white text-lg font-bold">
+                            <svg class="w-6 h-6 fill-current mr-2" viewBox="0 0 24 24">
+                                <path d="M20.586 11.757l-9.95 9.95a1.494 1.494 0 01-2.122 0l-3.72-3.72a1.494 1.494 0 010-2.122l9.95-9.95-4.714-4.714z"/>
+                            </svg>
+                            Building Management
+                        </a>
+                    </div>
+                    <div class="hidden sm:block">
+                        <ul class="flex space-x-4 text-white font-medium">
+                            <li><a href="#" id="home_page" class="hover:text-gray-300">Home</a></li>
+                            <li><a href="choose_action.html" id="login_page" class="hover:text-gray-300">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="flex-1 flex items-center justify-center mt-16 bg-purple">
+            <h2 class="text-6xl font-thin text-white">BuildingManagement.com</h2>
+        </div>
+        <div class="container mx-auto px-4 flex-1 flex items-start justify-center mt-n32 md:mr-30">
+            <div class="w-full md:w-1/2 pr-8">
+                <h2 class="text-5xl font-montserrat text-white font-serif mb-4">Find your space,</h2>
+                <h2 class="text-5xl font-montserrat text-white font-serif mb-8">Book your place!</h2>
+            </div>
+            <div class="w-full md:w-full" style="transform: translateY(-28%);">
+                <img src="images/Screen Shot 2023-04-25 at 6.14.44 PM.png" alt="Building Picture" class="w-full">
+            </div>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>

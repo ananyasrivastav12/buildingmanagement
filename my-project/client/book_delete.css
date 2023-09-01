@@ -1,0 +1,170 @@
+/* .top_header {
+    display: flex;
+    justify-content: space-between;
+}
+#welcome_text {
+    color: #553EA3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: lighter;
+
+}
+
+hr {
+    color: #553EA3;
+    background-color: #553EA3 ;
+    width: 25%;
+    size: 100px;
+    height: 3px;
+}
+
+.circle {
+    margin: 1em;
+    height: 40px;
+    width: 40px;
+    background-color: #553EA3;
+    border-radius: 50%;
+  }
+
+.back_arrow {
+    width: 5%;
+    color: white;
+    font-size: 18px;
+    background-color: #553EA3; 
+    border: 5px solid #553EA3;
+    border-radius: 25px;
+}
+
+.top {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    margin: 1em;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.middle_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#book_button {
+    width: 30%;
+    color: white;
+    font-size: 48px;
+    background-color: #553EA3;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    margin: auto;
+    border: 50px solid #553EA3;
+    border-radius: 25px;
+    padding: 10px;
+
+}
+
+#delete_button {
+    width: 30%;
+    color: white;
+    font-size: 48px;
+    background-color: #553EA3;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    margin-left: 200px;
+    border: 50px solid #553EA3;
+    border-radius: 25px;
+    padding: 10px;
+} */
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ECEDEB;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #553EA3;
+}
+
+h1 {
+    font-size: 3em;
+    color: #553EA3;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.middle_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#welcome_text {
+    text-align: center;
+    color: #553EA3;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+#book_button,
+#delete_button {
+    background-color: #0F7784;
+    color: #ECEDEB;
+    border: none;
+    padding: 30px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 1em;
+    cursor: pointer;
+    border-radius: 0.5em;
+    transition: background-color 0.3s ease;
+}
+
+#book_button:hover,
+#delete_button:hover {
+    background-color: #055B66;
+}
+
+nav {
+    background-color: #553EA3;
+    color: #ECEDEB;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+nav a {
+    color: #ECEDEB;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #8B5CF6;
+}
+
+.content {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
